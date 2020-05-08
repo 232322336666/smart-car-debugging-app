@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/fengshankongzhi"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bluetooth.admin.balencecar.MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/button_start"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+   		    android:background="@drawable/button_stytle"
+   		    android:text="点击这里开始"
+			android:textSize="35sp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="0.7"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/bluetoothswitch"
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="0.75"
+            android:checked="false"
+            android:text=" 蓝牙开关：         " />
+
+        <Button
+            android:id="@+id/buttonSearchBluetooth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:background="@drawable/button_stytle"
+
+            android:text="搜索" />
+    </LinearLayout>
+    <!--android:onClick="click_bluetoothSearch"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/list_bluetooth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.7" />
+
+        <Button
+            android:id="@+id/buttonConnect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:background="@drawable/button_stytle"
+
+            android:text="连接" />
+    </LinearLayout>
+
+  <!--  android:onClick="click_bluetoothConnect"-->
+
+</LinearLayout>
